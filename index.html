@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Fútbol</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Quiz de Fútbol ⚽</h1>
+      <div class="timer hidden"><i class="fas fa-clock"></i> <span id="time">0</span></div>
+    </div>
+    
+    <div class="content">
+      <div id="start">
+        <p>Demuestra cuánto sabes sobre el deporte rey contestando 10 preguntas aleatorias.</p>
+        <p><i class="fas fa-info-circle"></i> Tienes 15 segundos para responder cada pregunta.</p>
+        <button class="btn" onclick="startQuiz()"><i class="fas fa-play"></i> Comenzar Quiz</button>
+      </div>
+      
+      <div id="quiz" class="hidden">
+        <div id="question-counter">Pregunta 1 de 10</div>
+        <div class="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+        <h2 id="question"></h2>
+        <ul id="options"></ul>
+        <div id="feedback"></div>
+      </div>
+      
+      <div id="result" class="hidden">
+        <h2><i class="fas fa-trophy"></i> Resultado Final</h2>
+        <p id="score"></p>
+        
+        <div class="score-detail">
+          <div class="score-item">
+            <i class="fas fa-check-circle"></i>
+            <div class="number" id="correct-answers">0</div>
+            <div class="label">Correctas</div>
+          </div>
+          <div class="score-item">
+            <i class="fas fa-times-circle"></i>
+            <div class="number" id="incorrect-answers">0</div>
+            <div class="label">Incorrectas</div>
+          </div>
+          <div class="score-item">
+            <i class="fas fa-percentage"></i>
+            <div class="number" id="percentage">0%</div>
+            <div class="label">Porcentaje</div>
+          </div>
+        </div>
+        
+        <p id="message"></p>
+        
+        <button class="btn" onclick="location.reload()"><i class="fas fa-redo"></i> Volver a intentar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js">
+
+   
+  </script>
+</body>
+</html>
